@@ -1,0 +1,73 @@
+<header class="header">
+  <div class="header-text">
+    <div class="header-title">Input Dialogs</div>
+    <div class="header-subtitle">Input dialogs let the user enter or change some data.</div>
+  </div>
+  <div class="header-space">
+  </div>
+  <div class="header-actions">
+    <button mat-stroked-button color="primary" (click)="onShowExample($event)">
+      <mat-icon>visibility</mat-icon> Show example
+    </button>
+  </div>
+</header>
+
+<mat-divider class="divider"></mat-divider>
+
+<ol class="rule-list">
+
+  <li>The application is grayed out in the background as soon as a dialog pop up window is opened.</li>
+
+  <li>The dialog pop up can be closed by clicking [X], the [ESC]-button on the keyboard or the
+    [Cancel]-button in the pop up, without taking over any of the changes performed by the user.
+    <ol>
+      <li>If no action was performed by the user, the pop up window can also be closed by clicking into the grayed
+        out background.
+      </li>
+      <li>If the user has performed at least one action and accidentally clicks into the grayed out background, the
+        pop up may not be closed.
+      </li>
+    </ol>
+  </li>
+
+  <li>Required fields are clearly and consistently marked as mandatory/required.</li>
+
+  <li>Two types of hints:
+    <ol>
+      <li>Assistance: For correct input of required data in a neutral font color (i.e. pre filled fields with
+        example input)
+      </li>
+      <li>Error hint: For data input in an invalid form (immediate feedback needed) made visible in a clearly
+        emphasized font color. Error hints have to be verbalized in a clearly understandable manner and have to give
+        the user a helpful guidance to solve the error case
+      </li>
+    </ol>
+  </li>
+
+  <li>To complete the pop up action, the [Apply] button must be clicked. This button is only clickable when all
+    required fields are filled out in a correct manner and when all potential errors are solved.
+  </li>
+
+  <li>Congruent/coincided wording is needed for both, pop up title and text on [Apply] button.
+    Example: Title of dialog: <b>Create new Label</b>, text on [Apply] button: <b>Create Label</b>
+  </li>
+
+  <li>Buttons can be categorized in types. Symbols are attached to these types with a specific color for an
+    intrinsic and fast recognition of the button function.
+  </li>
+
+  <li>Rule of Thumb: Dialog pop up consists of not more than five to six elements in total and does not include
+    multiple steps
+    <ol>
+      <li>Size: Maximum 50% of the whole parent element</li>
+      <li>Position: In the upper half or centered in relation to the parent element</li>
+    </ol>
+  </li>
+
+  <li>Do not use cascading/overlapping dialogs. Dialogs inside of dialogs should be avoided as much as possible.
+  </li>
+
+  <li>Avoid flickering dialogs. These are dialogs which change their size depending on the content.
+  </li>
+
+</ol>

@@ -1,0 +1,84 @@
+<div class="page">
+  <header class="header">
+
+    <div class="header-logo">
+      <img src="../../../assets/images/goldbars.png" />
+    </div>
+
+    <div class="header-text">
+      <div class="header-title">{{title}}</div>
+      <div class="header-version">Version: {{version}}</div>
+    </div>
+
+    <div class="header-actions">
+    </div>
+
+    <div class="header-brand">
+      <img src="../../../assets/images/vwlogo.svg" />
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <aside class="aside">
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <b>Application Global</b>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-nav-list>
+          <a mat-list-item [routerLink]="['/common']">Common Rules</a>
+        </mat-nav-list>
+
+        <mat-nav-list>
+          <a mat-list-item [routerLink]="['/error-handling']">Error Handling</a>
+        </mat-nav-list>
+
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <b>Dialogs & Modals</b>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-nav-list>
+          <a mat-list-item [routerLink]="['/confirm-dialog']">Confirmation Dialogs</a>
+          <a mat-list-item [routerLink]="['/dialog']">Input Dialogs</a>
+          <a mat-list-item [routerLink]="['/wizard']">Wizards</a>
+        </mat-nav-list>
+
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <b>Mass Data</b>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-nav-list>
+          <a mat-list-item [routerLink]="['/main-table']">Main Tables</a>
+        </mat-nav-list>
+
+      </mat-expansion-panel>
+
+    </aside>
+
+    <mat-divider [vertical]="true"></mat-divider>
+
+    <div class="rule-area">
+      <router-outlet></router-outlet>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    {{title}} &copy; {{lastChangeYear}} by {{author}}
+  </footer>
+</div>

@@ -1,0 +1,10 @@
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 1.5rem;
+}
+
+.colspan-2 {
+  grid-column: span 2;
+}
