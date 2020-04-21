@@ -12,7 +12,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Modify the file **tsconfig.json**
 
-> "resolveJsonModule": true
+> "compilerOptions": {  
+> ...  
+> "resolveJsonModule": true  
+> ...  
+> }  
 
 After this it is possible to use the data specified in **package.json** in the application.
 
@@ -29,6 +33,14 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Building for GitHub
+
+> npm install -g angular-cli-ghpages
+
+> ng build --prod --base-href "https://<user-name>.github.io/<repo>"
+>
+> ngh --dir dist/<app-name>
 
 ## Running unit tests
 

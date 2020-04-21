@@ -1,14 +1,14 @@
-<form [formGroup]="formGroup">
+<h1 mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragHandle>
+  Create New User
+</h1>
 
-  <button class="close-button" mat-icon-button tabindex="-1" [mat-dialog-close]>
-    <mat-icon>close</mat-icon>
-  </button>
+<button class="close-button" mat-icon-button tabindex="-1" [mat-dialog-close]>
+  <mat-icon>close</mat-icon>
+</button>
 
-  <h1 mat-dialog-title>
-    Create New User
-  </h1>
+<div mat-dialog-content>
 
-  <div mat-dialog-content>
+  <form [formGroup]="formGroup">
 
     <div class="form-container">
 
@@ -51,15 +51,15 @@
 
     </div>
 
-  </div>
+  </form>
 
-  <div mat-dialog-actions>
-    <button mat-button color="accent" [mat-dialog-close]>
-      <mat-icon>cancel</mat-icon> Cancel
-    </button>
-    <button mat-button color="primary" (click)="onCreateClick()" [disabled]="!formGroup.valid" [mat-dialog-close]>
-      <mat-icon>check</mat-icon> Create User
-    </button>
-  </div>
+</div>
 
-</form>
+<div mat-dialog-actions>
+  <button mat-button color="accent" [mat-dialog-close]>
+    <mat-icon>cancel</mat-icon> Cancel
+  </button>
+  <button mat-button color="primary" (click)="onCreateClick()" [disabled]="!formGroup.valid" [mat-dialog-close]>
+    <mat-icon>check</mat-icon> Create User
+  </button>
+</div>

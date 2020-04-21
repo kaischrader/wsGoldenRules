@@ -16,6 +16,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
+import { DragDropModule } from '@angular/cdk/drag-drop';
+
 import { LayoutModule } from '@angular/cdk/layout';
 
 import { DialogComponent } from './rules/dialog/dialog.component';
@@ -50,6 +52,7 @@ import { ExampleDialogComponent } from './rules/dialog/example-dialog/example-di
     MatIconModule,
     MatButtonModule,
     LayoutModule,
+    DragDropModule,
     MatExpansionModule,
     MatDialogModule,
     MatFormFieldModule,
