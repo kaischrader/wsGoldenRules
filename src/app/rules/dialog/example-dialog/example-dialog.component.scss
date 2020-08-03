@@ -1,4 +1,17 @@
+.title-area {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center; // cross-axis
+  // justify-content: center; // main-axis
+}
+
+.register-icon {
+  transform: scale(1.5);
+  margin-right: 1rem;
+}
+
 .form-container {
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;

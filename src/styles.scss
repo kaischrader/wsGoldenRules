@@ -19,6 +19,9 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+// ====================================================== //
+// =========== Global adjustments for dialogs =========== //
+// ====================================================== //
 .cdk-overlay-pane.input-dialog {
   position: relative !important;
 }
@@ -27,7 +30,16 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 5px;
+  padding-top: 7px;
+  padding-right: 10px;
   line-height: 14px;
   min-width: auto;
+}
+
+[mat-dialog-title] {
+  margin: -24px -24px 0px -24px !important;
+  padding: 10px 24px;
+  background: var(--bgr);
+  color: var(--light);
+  cursor: move;
 }

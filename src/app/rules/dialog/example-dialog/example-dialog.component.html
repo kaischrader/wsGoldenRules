@@ -1,5 +1,8 @@
 <h1 mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragHandle>
-  Create New User
+  <div class="title-area">
+    <mat-icon class="register-icon">person_add</mat-icon>
+    Create New User
+  </div>
 </h1>
 
 <button class="close-button" mat-icon-button tabindex="-1" [mat-dialog-close]>
@@ -60,6 +63,6 @@
     <mat-icon>cancel</mat-icon> Cancel
   </button>
   <button mat-button color="primary" (click)="onCreateClick()" [disabled]="!formGroup.valid" [mat-dialog-close]>
-    <mat-icon>check</mat-icon> Create User
+    <mat-icon>person_add</mat-icon> Create User
   </button>
 </div>
