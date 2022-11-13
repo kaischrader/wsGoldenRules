@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { title, version, author, lastChangeYear } from '../../package.json';
+import packageInfo from 'package.json';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +8,8 @@ import { title, version, author, lastChangeYear } from '../../package.json';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  public title: string = title;
-  public author: string = author;
-  public version: string = version;
-  public lastChangeYear: string = lastChangeYear;
+  public title: string = packageInfo.title;
+  public author: string = packageInfo.author;
+  public version: string = packageInfo.version;
+  public lastChangeYear: string = packageInfo.lastChangeYear;
 }

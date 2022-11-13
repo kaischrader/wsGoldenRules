@@ -12,7 +12,7 @@
   margin-top: 1em;
 }
 
-.header-actions>button {
+.header-actions > button {
   margin-left: 1em;
 }
 
@@ -33,11 +33,11 @@
   }
 }
 
-.rule-list>li {
+.rule-list > li {
   padding: 1em;
   padding-top: 3em;
   border: 1px solid gray;
-  border-radius: .3em;
+  border-radius: 0.3em;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
 
   display: block;
@@ -45,11 +45,11 @@
   counter-increment: inst;
 }
 
-.rule-list>li>ol>li {
+.rule-list > li > ol > li {
   margin-top: 1em;
 }
 
-.rule-list>li::before {
+.rule-list > li::before {
   content: counter(inst);
 
   background: rgba(255, 150, 0, 0.8);
